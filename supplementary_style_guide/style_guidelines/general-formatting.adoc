@@ -13,7 +13,7 @@ When the format _day Month year_ causes a presentation or clarity issue, use _Mo
 [[user-replaced-values]]
 == User-replaced values
 
-A _user-replaced value_ is a value that the user must replace with a value that is relevant for their situation. User-replaced values are often found in places such as code blocks, file paths, and commands.
+A _user-replaced value_, also known as a replaceable or variable value, is a value that the user must replace with a value that is relevant for their situation. User-replaced values are often found in places such as code blocks, file paths, and commands.
 
 Use descriptive names for user-replaced values and follow this general format: _<value_name>_.
 
@@ -53,6 +53,15 @@ This renders as:
 ----
 $ oc describe node __<node_name>__
 ----
+====
+
+[TIP]
+====
+When applying multiple attributes to a block, use the following syntax:
+
+.Example AsciiDoc: Combined source highlighting and substitution attributes
+
+  [source,terminal,subs="+quotes"]
 ====
 
 // TODO: In the future, add alternative guidance for XML
